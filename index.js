@@ -83,23 +83,53 @@ q4.addEventListener(`click`, function run() {
     }
 })
 
-let q5 = document.getElementById(`q5`);
-let a5 = document.getElementById(`a5`);
-let ar5 = document.getElementById(`ar5`);
+// let q5 = document.getElementById(`q5`);
+// let a5 = document.getElementById(`a5`);
+// let ar5 = document.getElementById(`ar5`);
 
-q5.addEventListener(`click`, function run() {
+// q5.addEventListener(`click`, function run() {
 
-    if (a5.style.display != `block`) {
-        a5.style.display = `block`
-        q5.style.color = `black`
-        q5.style.fontWeight = `bolder`
-        ar5.style.transform = `rotate(180deg)`
+//     if (a5.style.display != `block`) {
+//         a5.style.display = `block`
+//         q5.style.color = `black`
+//         q5.style.fontWeight = `bolder`
+//         ar5.style.transform = `rotate(180deg)`
+        
+//     } else {
+//         a5.style.display = `none`
+//         ar5.style.transform = `rotate(360deg)`
+//         q5.style.color = `var(--Darkgrayishblue)`
+//         q5.style.fontWeight = `bold`
+//     }
+// })
+
+
+// let a5 = document.getElementById(`a5`);
+// let ar5 = document.getElementById(`ar5`);
+
+let qa5 = document.getElementById(`qa5`);
+
+qa5.childNodes[1].onclick = run
+
+function run() {
+    
+    let q = qa5.childNodes[1];
+    let a = qa5.childNodes[3];
+    let ar = q.childNodes[1];
+    if (a.style.display != `block`) {
+        a.style.display = `block`
+        q.style.color = `black`
+        q.style.fontWeight = `bolder`
+        ar.style.transform = `rotate(180deg)`
         
     } else {
-        a5.style.display = `none`
-        ar5.style.transform = `rotate(360deg)`
-        q5.style.color = `var(--Darkgrayishblue)`
-        q5.style.fontWeight = `bold`
+        a.style.display = `none`
+        ar.style.transform = `rotate(360deg)`
+        q.style.color = `var(--Darkgrayishblue)`
+        q.style.fontWeight = `bold`
     }
-})
-
+}
+            
+    
+// let qa5 = document.getElementById(`qa5`);
+//  console.log(qa5.childNodes)
