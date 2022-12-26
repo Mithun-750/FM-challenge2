@@ -1,8 +1,6 @@
 
 qas = document.getElementsByClassName("qa")
 qaArray = Array.from(qas)
-console.log(qaArray)
-
 
 for (const element of qaArray) {
     
