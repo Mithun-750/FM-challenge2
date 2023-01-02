@@ -35,7 +35,7 @@ body {
     cursor: pointer;
 }
 
-.question img {
+.arrow {
     align-self: center;
     transition: all 0.3s ease-in-out;
 }
@@ -71,7 +71,7 @@ body {
     height: 70vh;
     background: url(./images/illustration-woman-online-desktop.svg) no-repeat;
     background-position: 210% 18%;
-
+    
 }
 
 #im2 img {
@@ -90,6 +90,14 @@ body {
     border-bottom: 1px solid var(--Softred);
     padding: 1px 10px 20px 0px;
     font-size: var(--Fontsize);
+}
+.question_open{
+    color: black;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    
 }
 
 .question:hover {

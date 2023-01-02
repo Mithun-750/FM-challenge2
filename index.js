@@ -13,17 +13,14 @@ for (const element of qaArray) {
         let ar = q.childNodes[1];
         if (a.style.display != `block`) {
             a.style.display = `block`
-            q.style.color = `black`
-            q.style.fontWeight = `bolder`
+            q.setAttribute(`class`, `question_open`)
             ar.style.transform = `rotate(180deg)`
             
         } else {
             a.style.display = `none`
             ar.style.transform = `rotate(360deg)`
-            q.style.color = `var(--Darkgrayishblue)`
-            q.style.fontWeight = `bold`
+            q.removeAttribute(`class`, `question_open`)
+            q.setAttribute(`class`, `question`)
         }
     }
 }
-
-            
